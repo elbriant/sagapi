@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
@@ -14,11 +15,12 @@ export default defineNuxtConfig({
       },
     },
   },
-
+  
   tailwindcss: {
     viewer: true,
     exposeConfig: true,
+    configPath: 'tailwind.config.ts',
   },
 
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss"]
 });

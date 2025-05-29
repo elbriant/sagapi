@@ -1,5 +1,5 @@
-/** @type {import('tailwindcss').Config} */
 
+console.log("TAILWIND CONFIG IS SUCCESFULLY LOADED")
 export default {
   content: ["./index.html","./app.vue", "./pages/**/*.{vue,js,ts}"],
   theme: {
