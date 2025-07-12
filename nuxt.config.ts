@@ -1,20 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-const config = useRuntimeConfig()
-
 export default defineNuxtConfig({
   compatibilityDate: "2025-05-15",
   devtools: { enabled: true },
 
   runtimeConfig: {
-    runtimeConfig: {
-      // Private variables (server-side only)
-      private: {
-      },
-      // Public variables (client and server)
-      public: {
-        docsTarget: process.env.NUXT_DOCS_TARGET,
-      },
+    // Private variables (server-side only)
+    private: {
+    },
+    // Public variables (client and server)
+    public: {
+      docsTarget: process.env.NUXT_DOCS_TARGET,
     },
   },
 
@@ -22,7 +18,7 @@ export default defineNuxtConfig({
     server: {
       proxy: {
         "/docs/": {
-          target: config.public.docsTarget!, // Vitepress server address
+          target: process.env.NUXT_DOCS_TARGET!, // Vitepress server address
           changeOrigin: true,
           ws: true,
         },
