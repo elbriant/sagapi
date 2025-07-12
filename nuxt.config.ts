@@ -14,19 +14,11 @@ export default defineNuxtConfig({
     },
   },
 
-  vite: {
-    server: {
-      proxy: {
-        "/docs/": {
-          target: process.env.NUXT_DOCS_TARGET!, // Vitepress server address
-          changeOrigin: true,
-          ws: true,
-        },
-      },
-    },
+  routeRules: {
+    '/docs/**': {
+      proxy: process.env.NUXT_DOCS_TARGET + '/**',
+    }
   },
-
-
 
   tailwindcss: {
     cssPath: ['~/assets/css/tailwind.css', { injectPosition: "first" }],
