@@ -1,4 +1,3 @@
-import { defineNuxtRouteMiddleware, navigateTo } from "nuxt/app"
 import { joinURL } from 'ufo'
 
 export default defineNuxtRouteMiddleware((to, from) => {
@@ -7,7 +6,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
         const proxyUrl = useRuntimeConfig().public.docsTarget as string;
 
         // change the path if need
-        const path = to.path.replace(/^\/docs\//, '') // /docs/users -> users
+        const path = to.path.replace(/^\/docs/, '') // /docs/users -> users
         const target = joinURL(proxyUrl, path)
 
         // proxy it!
