@@ -14,12 +14,6 @@ export default defineNuxtConfig({
     },
   },
 
-  routeRules: {
-    '/docs/**': {
-      proxy: process.env.NUXT_DOCS_TARGET + '/**',
-    }
-  },
-
   tailwindcss: {
     cssPath: ['~/assets/css/tailwind.css', { injectPosition: "first" }],
     viewer: true,
