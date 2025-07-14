@@ -16,7 +16,8 @@ const url = useRequestURL();
                 you can retrieve all the details of any operator, from stats and skills to voice lines and
                 promotions. No complex setup, no endless queries. Simple, fast, and reliable.</p>
         </div>
-        <div class="bg-saga-light text-white rounded-lg w-full max-w-lg border-4 border-gray-300">
+        <div class="bg-saga-light text-white rounded-lg w-full border-4 border-gray-300
+        sm:max-w-lg">
             <p class="text-saga-dark p-4 font-semibold"><span class="p-2 bg-green-300 rounded-full">GET</span>
                 /api/operator/{operator}
             </p>

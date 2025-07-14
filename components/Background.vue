@@ -32,9 +32,7 @@ const positionClass = ref(props.inverse ? 'inverse' : '');
 }
 
 .wave.inverse span {
-    width: 400vh;
-    height: 400vh;
-    top: 320%;
+    top: 260%;
     transition-delay: 312ms;
 }
 
