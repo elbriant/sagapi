@@ -21,7 +21,7 @@ console.log(randomSagaSplash.value)
         <div key="logo" class=" flex justify-center items-center w-full
             sm:w-auto
             lg:col-start-1 lg:row-start-1 lg:col-span-1 lg:row-span-1">
-            <img src="public/sagapi_logo.webp" alt="" srcset="" class="max-w-md max-h-fit">
+            <img src="public/sagapi_logo.webp" alt="" srcset="" class="w-full sm:max-w-md max-h-fit">
         </div>
         <div key="search-bar" class="flex flex-col justify-start items-center w-full
             sm:w-auto

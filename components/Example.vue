@@ -3,13 +3,15 @@ const url = useRequestURL();
 </script>
 
 <template>
-    <div class="w-full h-screen font-Montserrat flex justify-center items-center px-24 py-7 gap-14 ">
+    <div id="example" class="w-full h-screen font-Montserrat flex flex-col justify-center items-center px-4 py-5 gap-4 
+    lg:flex-row lg:px-24 lg:gap-14 ">
         <div class="text-saga-verylight max-w-md">
-            <h3
-                class="bg-gradient-to-r from-saga-yellow to-saga-red bg-clip-text text-transparent text-7xl leading-loose font-extrabold mb-6">
+            <h3 class="bg-gradient-to-r from-saga-yellow to-saga-red bg-clip-text text-transparent text-5xl leading-loose font-extrabold mb-1
+                lg:text-7xl lg:mb-6">
                 Easy to
                 use</h3>
-            <p class="text-lg"> Get the Arknights operator data you need—quickly and effortlessly! With just a
+            <p class="text-sm lg:text-lg"> Get the Arknights operator data you need—quickly and effortlessly! With just
+                a
                 single API request,
                 you can retrieve all the details of any operator, from stats and skills to voice lines and
                 promotions. No complex setup, no endless queries. Simple, fast, and reliable.</p>
