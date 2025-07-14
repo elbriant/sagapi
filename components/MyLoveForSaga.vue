@@ -3,8 +3,8 @@
     px-4 sm:px-12 ">
         <h4 class="bg-gradient-to-tl from-saga-yellow to-saga-red bg-clip-text text-transparent 
             font-extrabold mb-6 text-center 
-            leading-tight md:leading-loose
-            text-5xl md:text-6xl lg:text-7xl ">Made with love for Saga &hearts;</h4>
+            text-5xl md:text-6xl lg:text-7xl 
+            leading-tight md:leading-loose lg:leading-loose">Made with love for Saga &hearts;</h4>
         <p class="text-saga-light text-center max-w-4xl mb-3
         text-lg sm:text-xl lg:text-2xl">
             This API wasn’t built out of necessity—it was crafted out of pure admiration for Saga, the lively wandering
