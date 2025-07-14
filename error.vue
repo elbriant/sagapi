@@ -4,30 +4,27 @@ import type { NuxtError } from '#app'
 const url = useRoute();
 
 const props = defineProps({
-    error: {
-        type: Object as () => NuxtError,
-        required: true
-    }
+    error: Object as () => NuxtError
 })
 
 </script>
 
 <template>
     <div
-        class="w-full h-screen bg-saga-verydark font-Montserrat flex flex-col justify-center items-center text-saga-light gap-4">
+        class="w-full h-svh bg-saga-verydark font-Montserrat flex flex-col justify-center items-center text-saga-light gap-4 px-4">
         <div
             class="h-8 fixed left-0 right-0 pointer-events-none bg-gradient-to-r from-saga-yellow via-saga-light to-saga-red spotlight">
         </div>
-        <h1 class="text-6xl font-bold"> {{ error.statusCode }}</h1>
+        <h1 class="text-6xl font-bold"> {{ error?.statusCode }}</h1>
 
-        <p class="text-lg">{{ error.message }}</p>
+        <p class="text-base text-justify sm:text-lg">{{ error?.message }}</p>
 
         <div class="max-w-44 max-h-44 object-contain">
-            <img v-if="error.statusCode === 404" src="public/gif/saga_404.gif" alt="Saga 404 error gif" />
+            <img v-if="error?.statusCode === 404" src="public/gif/saga_404.gif" alt="Saga 404 error gif" />
             <img v-else src="public/gif/saga_error.gif" alt="Saga error gif" />
         </div>
 
-        <NuxtLink to="/"
+        <a href="/"
             class="relative group inline-block p-px font-semibold leading-6 text-white bg-saga-dark shadow-2xl cursor-pointer rounded-xl shadow-saga-dark transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95">
             <span
                 class="absolute inset-0 rounded-xl bg-gradient-to-r from-saga-yellow via-saga-red to-saga-verylight p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
@@ -43,7 +40,7 @@ const props = defineProps({
                     </svg>
                 </div>
             </span>
-        </NuxtLink>
+        </a>
     </div>
 </template>
 

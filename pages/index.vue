@@ -29,11 +29,11 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-    <div class="w-full h-screen relative z-20">
+    <div class="w-full h-svh relative z-20">
         <Background :color="currentColorClass" />
         <MainComponent />
     </div>
-    <section id="1" class="w-full h-screen ">
+    <section class="w-full h-svh">
         <Background :inverse="true" :color="currentColorClass" />
         <Example />
     </section>

@@ -15,7 +15,7 @@ console.log(randomSagaSplash.value)
 </script>
 
 <template>
-    <main id="main" class="w-full h-screen gap-4 font-Montserrat overflow-hidden flex flex-col justify-center items-start py-12 px-4
+    <main id="main" class="w-full h-full gap-4 font-Montserrat overflow-hidden flex flex-col justify-center items-start py-12 px-4
         sm:px-12
         lg:px-32 lg:grid lg:grid-cols-2 lg:grid-rows-2">
         <div key="logo" class=" flex justify-center items-center w-full

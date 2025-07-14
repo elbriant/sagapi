@@ -24,8 +24,8 @@ const positionClass = ref(props.inverse ? 'inverse' : '');
 .wave span {
     content: "";
     position: absolute;
-    width: 325vh;
-    height: 325vh;
+    width: 325svh;
+    height: 325svh;
     top: 0;
     left: 50%;
     transform: translate(-50%, -75%);
